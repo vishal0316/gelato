@@ -1,4 +1,4 @@
-import "./container.css";
+import "./Container.css";
 import secondcontainer from "../../assets/secondcontainer.png";
 
 const Container = () => {
