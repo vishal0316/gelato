@@ -1,0 +1,139 @@
+/* Main hero styles */
+.hero {
+  display: flex;
+  justify-content: space-between;
+  padding: 80px;
+  align-items: center;
+}
+
+/* Hero Text styles */
+.hero-text {
+  width: 50%;
+}
+
+/* Headings and text */
+h1 {
+  font-size: 56px;
+  margin-bottom: 20px;
+}
+
+h5 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+/* Buttons styling */
+.hero-buttons {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.btn-primary {
+  background-color: #000;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 50px;
+}
+
+.btn-secondary {
+  background-color: #fff;
+  color: #000;
+  padding: 10px 20px;
+  border: 1px solid #000;
+  border-radius: 50px;
+}
+.btn-secondary:hover {
+  background-color: #dcdcdc;
+}
+
+/* Shopify rating styles */
+.shopify-rating {
+  align-items: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.shopify-rating img {
+  width: 150px;
+}
+
+.rating span {
+  display: block;
+}
+
+/* Hero image styles */
+.hero-image img {
+  width: 100%;
+  max-width: 600px;
+  border-radius: 10px;
+}
+
+.container {
+  background-color: #faf6ef;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 7px;
+  font-size: 32px;
+}
+.stat-block {
+  text-align: center;
+  padding: 20px;
+}
+
+.star {
+  font-size: 20px;
+}
+
+/* Mobile-specific styles */
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    padding: 20px;
+    text-align: center;
+    background-color: #faf6ef;
+  }
+
+  .hero-text {
+    width: 100%;
+  }
+
+  .hero-image {
+    order: -1; /* This brings the image to the top on mobile */
+    margin-bottom: 20px;
+  }
+
+  h1 {
+    font-size: 32px;
+  }
+
+  h5 {
+    font-size: 18px;
+  }
+
+  p {
+    font-size: 16px;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .btn-primary,
+  .btn-secondary {
+    width: 100%;
+  }
+
+  .container {
+    display: none;
+  }
+}

@@ -1,0 +1,60 @@
+.boxfour {
+  display: flex;
+  flex-direction: column; /* Stack content vertically on mobile */
+  background-color: #faf6ef;
+  padding: 20px; /* Reduced padding for smaller screens */
+}
+
+.left,
+.right {
+  width: 100%; /* Full width on mobile */
+  box-sizing: border-box;
+}
+
+.right img {
+  width: 100%; /* Make the image responsive */
+}
+
+.heading {
+  margin-left: 20px;
+  margin-top: 20px;
+  font-weight: 500;
+  line-height: 1.2;
+  font-size: 2rem; /* Reduced font size for mobile */
+}
+
+.btn {
+  padding-left: 20px;
+  padding: 10px;
+  border-radius: 50px;
+  background-color: black;
+  color: white;
+}
+
+/* Larger screens (PC) adjustments */
+@media (min-width: 768px) {
+  .boxfour {
+    flex-direction: row; /* Side-by-side layout on larger screens */
+    justify-content: space-between; /* Evenly space content */
+    padding: 40px;
+  }
+
+  .left {
+    order: 1; /* Text should come first on larger screens */
+    width: 50%; /* Set width to 50% for text */
+  }
+
+  .right {
+    order: 2; /* Image should come second (on the right) on larger screens */
+    width: 50%; /* Set width to 50% for the image */
+  }
+
+  .heading {
+    font-size: 3rem; /* Increase font size for larger screens */
+  }
+
+  .btn {
+    margin-left: 0;
+    padding: 15px;
+  }
+}

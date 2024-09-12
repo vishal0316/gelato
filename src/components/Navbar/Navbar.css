@@ -1,0 +1,148 @@
+/* Navbar container */
+.navbar {
+  border-bottom: 1px solid gray;
+  position: sticky;
+  top: 0;
+  /* overflow: hidden; */
+}
+
+/* Logo styling */
+.logoo {
+  width: 150px;
+  padding-left: 40px;
+  padding-top: 10px;
+}
+
+/* Upper navigation section */
+.upper-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+}
+
+/* Navigation buttons */
+.nav-buttons {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  padding: 5px 40px;
+}
+
+/* General button styles */
+.nav-button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: #000000;
+  font-size: 16px;
+  border-radius: 20px;
+  padding: 8px 15px;
+}
+
+.nav-button:hover {
+  background-color: #dcdcdc;
+}
+
+/* Sign-up button */
+.sign-up-button {
+  background-color: #000000;
+  color: white;
+  padding: 8px 15px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  border-radius: 20px;
+  border: 2px solid black;
+}
+
+.sign-up-button:hover {
+  color: grey;
+}
+
+/* Main navbar links */
+.main-nav {
+  display: flex;
+  padding: 1px;
+  border-top: 1px solid gray;
+  font-size: 18px;
+  padding-left: 40px;
+  background-color: white;
+}
+
+.dropdown {
+  position: relative;
+  padding: 10px;
+  cursor: pointer;
+  background-color: transparent;
+  /* font-weight: bold; */
+}
+
+/* Dropdown content */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+  z-index: 11;
+  padding: 10px;
+  top: 40px; /* Distance from the parent */
+  left: 0;
+  min-width: 150px; /* Minimum width of the dropdown */
+  border: 1px solid #ddd;
+}
+
+/* Show dropdown on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 8px 10px;
+  text-decoration: none;
+  display: block;
+  font-size: 14px;
+  z-index: 200;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+  z-index: 100;
+}
+
+/* Mobile Menu */
+.mobile-menu-toggle {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.main-nav.open {
+  display: block;
+}
+
+/* Mobile Dropdown adjustments */
+@media (max-width: 768px) {
+  .nav-buttons {
+    display: none;
+  }
+
+  .mobile-menu-toggle {
+    display: block;
+  }
+
+  .main-nav {
+    display: none;
+    flex-direction: column;
+    background-color: white;
+    border-top: 1px solid gray;
+  }
+
+  .main-nav.open {
+    display: flex;
+  }
+}

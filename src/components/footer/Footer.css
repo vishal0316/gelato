@@ -1,0 +1,160 @@
+.footer {
+  background-color: black;
+  color: white;
+  padding: 40px 20px;
+  font-family: Arial, sans-serif;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.social-icons {
+  font-size: 30px;
+}
+
+.footer-section {
+  flex: 1 1 100%;
+  max-width: 25%;
+
+  font-size: 20px;
+}
+
+.logo {
+  margin-bottom: 20px;
+}
+
+.logo-img {
+  width: 120px;
+  margin-bottom: 10px;
+}
+
+.footer-text {
+  margin: 10px 0;
+  font-size: 15px;
+}
+
+.footer-btn {
+  background-color: white;
+  color: black;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 50px;
+  cursor: pointer;
+  margin-bottom: 20px;
+  margin-left: 20px;
+}
+
+.app-links img {
+  width: 120px;
+  margin-right: 10px;
+  margin-left: 20px;
+}
+
+.footer-links {
+  margin-right: 150px;
+  max-width: 70%;
+  padding-top: 36px;
+  display: flex;
+  flex: 2;
+  /* justify-content: space-between; */
+}
+
+.link-column {
+  margin-right: 40px;
+}
+
+.link-column h4 {
+  margin-bottom: 10px;
+  font-size: 17px;
+}
+
+.link-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.link-column ul li {
+  margin-bottom: 8px;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 40px;
+  border-top: 1px solid #555;
+  padding-top: 20px;
+}
+
+.footer-bottom ul {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+}
+
+.footer-bottom ul li {
+  cursor: pointer;
+}
+
+.language-select {
+  background-color: black;
+  color: white;
+  border: 1px solid #fff;
+  padding: 5px;
+}
+
+.language-select option {
+  background-color: white;
+  color: black;
+}
+
+/* Responsive styles for mobile devices */
+@media screen and (max-width: 768px) {
+  .social-icons {
+    display: none;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .footer-section {
+    max-width: 100%;
+  }
+
+  .footer-links {
+    margin-right: 0;
+    max-width: 100%;
+    padding-top: 20px;
+    flex-direction: column;
+  }
+
+  .list {
+    flex-direction: column;
+  }
+
+  .link-column {
+    margin-bottom: 20px;
+  }
+
+  .accordion-content {
+    display: none;
+    margin-left: 15px;
+  }
+
+  .accordion-header {
+    cursor: pointer;
+  }
+}
+
+/* Add transitions for smooth expansion */
+.accordion-content {
+  transition: height 0.3s ease-out;
+}

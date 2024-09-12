@@ -1,0 +1,62 @@
+.boxthree {
+  display: flex;
+  flex-direction: column; /* Stack image and text vertically on mobile by default */
+  padding: 20px; /* Reduced padding for smaller screens */
+}
+
+.left,
+.right {
+  width: 100%; /* Full width on mobile */
+  box-sizing: border-box; /* Ensures padding is included in width */
+}
+
+.right img {
+  width: 100%; /* Make the image responsive */
+}
+
+.paragraph {
+  padding-top: 60px;
+  margin-left: -20px;
+}
+
+.heading {
+  margin-top: -20px;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+h4 {
+  margin-top: -20px;
+  font-weight: 500;
+  font-size: 25px;
+}
+
+button {
+  padding: 10px;
+  border-radius: 50px;
+  background-color: black;
+  color: white;
+}
+
+/* Adjustments for larger screens (laptop/PC) */
+@media (min-width: 768px) {
+  .boxthree {
+    flex-direction: row; /* Side-by-side layout for larger screens */
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+
+  .left {
+    order: 2; /* Text will come second (right side) on larger screens */
+    width: 50%;
+  }
+
+  .right {
+    order: 1; /* Image will come first (left side) on larger screens */
+    width: 50%;
+  }
+
+  .right img {
+    width: 90%; /* Adjust the image size for larger screens */
+  }
+}
