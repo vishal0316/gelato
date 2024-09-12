@@ -1,4 +1,4 @@
-import "./hero.css";
+import "./Hero.css";
 import hero from "../../assets/hero.png";
 import shopify from "../../assets/shopify.png";
 import { IoMdStar } from "react-icons/io";
